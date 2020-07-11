@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="homestyle.css">
+<script > 
+	
+function login()
+{
+  var usr=document.loginform.username;
+
+  var pwd=document.loginform.password;
+if(usr.value=="")
+{
+window.alert("please enter username");
+usr.focus();
+return false;
+}
+
+if(pwd.value=="")
+{
+window.alert("please enter password");
+pwd.focus();
+return false;
+}
+
+return true;
+}
+function adminlogin()
+{  
+  var usr=document.adminloginform.username;
+
+  var pwd=document.adminloginform.password;
+    if (usr.value == "admin" && pwd.value == "admin") {
+        
+    	window.open("newform.html");
+    	return true;
+    }
+    else
+    {
+    	window.alert("Unauthorised User");
+    	return false;
+    }
+}
+</script>
+	<title>HOMEP PAGE</title>
+</head>
+<body>
+<a href="http://localhost/web/home.html"><h1>UNIVERSITY INSTITUTE OF ENGINEERING AND TECHNOLOGY(UIET)</h1></a>
+<h2>Panjab University, Chandigarh</h2>
+<p id="image3"><img src="Logo_of_UIET,Panjab_University.jpg" width="85px" height="85px"></p>
+<br>
+<hr>
+<div id="button">
+	<ul>
+		<a href="http://localhost/web/home.html"><li>HOME</li></a>
+		<li>DEPARTMENT
+			<ul>
+				<a href="http://localhost/web/cse.html"><li>COMPUTER SCIENCE</li></a>
+				<a href="http://localhost/web/it.html"><li>INFORMATION TECHNOLOGY</li></a>
+				<a href="http://localhost/web/ece.html"><li>ELECTRONICS & COMMUNICATION</li></a>
+				<a href="http://localhost/web/eee.html"><li>ELECTRONICS & ELECTRICAL</li></a>
+				<a href="http://localhost/web/mech.html"><li>MECHANICAL</li></a>
+				<a href="http://localhost/web/bio.html"><li>BIOTECHNOLOGY</li></a>
+			</ul>
+		</li>
+		<a href="http://localhost/web/acedmiccalender.html"><li>ACADEMIC CALENDER</li></a>
+		<li>FACULTY
+			<ul>
+				<a href="http://localhost/web/csefaculty3.html"><li>COMPUTER SCIENCE</li></a>
+				<a href="http://localhost/web/ITfaculty3.html"><li>INFORMATION TECHNOLOGY</li></a>
+				<a href="http://localhost/web/ECEfaculyu3.html"><li>ELECTRONICS & COMMUNICATION</li></a>
+				<a href="http://localhost/web/eeefaculty3.html"><li>ELECTRONICS &ELECTRICAL</li></a>
+				<a href="http://localhost/web/MECHFACULTY3.html"><li>MECHANICAL</li></a>
+				<a href="http://localhost/web/biofaculty3.html"><li>BIOTECHNOLOGY</li></a>
+			</ul>
+		</li>
+		<a href="http://localhost/web/alumni.html"><li>ALUMNI</li></a>
+	</ul>
+	<br>
+	<br>
+	<br></div>
+	<div id="image2"><img src="1479222516UIET-Map.jpg" width="270px" height="240px"></div>
+<div id="image"><img src="IMG_20180621_103819.jpg" width="900px" height="450px"></div>
+	<div id="fm">
+		<form name="loginform" method="get" action="login.php" onsubmit="return login()">
+	<p id="sp">STUDENT PORTAL</p>
+	<br>
+	<table>
+		<tr>
+			<td><b>Username</b></td>
+			<td><input type="text" placeholder="Username" name="username"></td>
+
+		</tr>
+		<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+		<tr>
+			<td><b>Password</b></td>
+			<td><input type="Password" placeholder="Password" name="password"></td>
+			
+		</tr>
+		<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+			<tr><td colspan="2"><p align="center"><input class="sbmt" type="submit" value="LOGIN" size="30px" name="QQQ"></p></td>
+		</tr>
+	</table>
+</form>
+</div>
+		
+<div id="am">
+		<form name="adminloginform" method="get" onsubmit="return adminlogin()">
+	<p id="ap">ADMIN LOGIN</p>
+	<br>
+	<table>
+		<tr>
+			<td><b>Username</b></td>
+			<td><input type="text" placeholder="Username" name="username"></td>
+
+		</tr>
+		<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+		<tr>
+			<td><b>Password</b></td>
+			<td><input type="Password" placeholder="Password" name="password"></td>
+			
+		</tr>
+		<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+		
+			<tr><td colspan="2"><p align="center"><input class="sbmt" type="submit" value="LOGIN" size="30px" name=""></p></td>
+		</tr>
+	</table>
+</form>
+</div>
+
+
+	<div id="bt"></B>
+
+<H4><FONT COLOR="B40404" SIZE="6" FACE="Matura MT Script Capitals">&nbsp
+*Vision</FONT></H4>
+
+<BLOCKQUOTE>
+<B><p ALIGN="LEFT"><FONT FACE="Trebuchet MS" SIZE="2"><PRE>
+   To be the Front runner in Engineering Education and Research.
+</PRE></FONT></p></B></BLOCKQUOTE>
+
+<H4><FONT COLOR="B40404" SIZE="6" FACE="Matura MT Script Capitals">&nbsp
+*Mission</FONT></H4>
+
+<BLOCKQUOTE>
+<B><p ALIGN="LEFT"><FONT FACE="Trebuchet MS" SIZE="2"><PRE>
+   To produce professionally competent students for the career in engineering and technology by providing value-based quality education.
+
+   To provide the readily acceptable quality trained manpower to meet the requirements of the National and International industry in the 
+   emerging areas of engineering and technology as well as for research and design.
+
+   To develop strong collaboration with academic and research institutes as well as industry in the country and abroad.
+
+   To provide world level consultancy to generate wealth through services and new product design.
+
+    UIET, Panjab University. Chandigarh
+</PRE>
+<br>
+<hr>
+</FONT></p></B></BLOCKQUOTE>
+
+<HR>
+<H3><p align="center"><font color="red">Enquiry No(s):</font></p></H3>
+
+<p align="center">1800-180-2065,+91172 2534818, 2534866(from 9:30am to 1:00pm & 2:30pm to 5:00pm on working days including Saturday)</p>
+<BR>
+
+</div>
+</body>
+</html>
